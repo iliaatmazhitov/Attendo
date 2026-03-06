@@ -25,8 +25,8 @@ jobs:
         run: dotnet restore
 
       - name: Build Android APK
-        run: dotnet publish -f:net10.0-android -c Release -o output
-
+        run: dotnet publish -f:net9.0-android -c Release -o output
+        
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
